@@ -5,6 +5,18 @@
     <title>gkeep-vueifire</title>
   </head>
   <body>
+    <div id="demo">
+      <form @submit.prevent="addNote">
+          <input name="title" v-model="note" placeholder="Title"/>
+          <p>{{ note }}</p>
+          <button>Add #{{ anArray.length }}</button>
+      </form>
+
+      <!--<pre>{{ anObject | json }}</pre>-->
+      <ul>
+        <li v-for="item in anArray">{{ item.text }}</li>
+      </ul>
+    </div>
     <app></app>
     <!-- built files will be auto injected -->
   </body>
