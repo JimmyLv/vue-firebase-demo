@@ -15,6 +15,7 @@ script:
   - npm install
   - npm run clean
   - npm run lint
+  - npm run test
   - npm run build
 #  - cat scripts/conf.json.in | sed -e "s/QiNiuAK/$QiNiuAK/" | sed -e "s/QiNiuSK/$QiNiuSK/" > scripts/conf.json
 #  - wget http://devtools.qiniu.io/qiniu-devtools-linux_amd64-current.tar.gz
